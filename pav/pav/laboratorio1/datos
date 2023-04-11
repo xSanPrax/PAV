@@ -1,0 +1,74 @@
+// void agregarSocio(string ci, string nombre) {
+//        // Socio nuevosocio (ci,nombre);
+//        // ..Socio nuevo(ci,nombre);
+     
+// bool existeSocio = false;
+//     for (int i = 0; i < MAX_SOCIOS; i++) {
+//         if (zozio[i].getCI() == ci) {
+//             existeSocio = true;
+//             cout << "entro y verifico que la ci sea igual a la incertada " << endl;
+//             break;
+//         }
+//     }
+//     if (!existeSocio){
+//         for (int i = 0; i < MAX_SOCIOS; i++) {
+//             cout << "entro al segundo for" << endl;
+//              if (zozio[i].getCI() == "")
+//               {
+//                 //existeSocio = true;
+//                 zozio[i]= Socio(ci, nombre); 
+//                 cout << "entro y incerto el socio" << endl;
+//               }
+              
+//              cout << "Socio agregado con exito" << endl;
+//             break;
+//         }
+//     }   
+            
+//            }
+           
+
+
+          // void agregarVengador(string nombre, int poder, DtFecha fechaN);
+//OPERACION A
+// void menuAgregarVengador(){
+//   system("clear");
+//   cout << "__________________________" << endl;
+//   cout << "_____AGREGAR VENGADOR_____" << endl;
+//   string nombre;
+//   int poder,dia,mes,anio;
+//   cout << "NOMBRE: ";
+//   cin >> nombre;
+//   cout << "PODER: ";
+//   cin >> poder;
+//   cout << "FECHA NACIMIENTO";
+//   cout << "\nDIA: ";
+//   cin >> dia;
+//   cout << "MES: ";
+//   cin >> mes;
+//   cout << "ANIO: ";
+//   cin >> anio;
+//   try{
+//     DtFecha fecha = DtFecha(dia, mes, anio);
+//     agregarVengador(nombre,poder,fecha);
+//   } catch (invalid_argument& e){
+//     cout << e.what() << endl;
+//     system("sleep 5");
+//   }
+// }
+// void agregarVengador(string nombre, int poder, DtFecha fechaN){
+//   int i=0;
+//   while(i<colVengadores.tope && colVengadores.v[i]->getNombre()!=nombre)
+//     i++;
+//   if(i==colVengadores.tope){
+//     if (poder>=0){
+//       Vengador* v = new Vengador(nombre,poder,fechaN);
+//       colVengadores.v[colVengadores.tope]=v;
+//       colVengadores.tope++;
+//     } else {
+//       throw invalid_argument("El poder no pueder ser negativo!!\n");
+//     }
+//   } else {
+//     throw invalid_argument("Ya existe vengador con ese nombre!!\n");
+//   }
+// }

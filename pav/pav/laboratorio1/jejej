@@ -1,0 +1,44 @@
+struct Socio {
+    Socio* s[MAX_SOCIOS];
+    int tope=0;
+} zozio;
+
+DtSocio obtenerSocios(string Ci, int& cantSocios){
+    bool existeSocio = false;
+    int index;
+    //cantPartidas;
+    DtSocio dts;
+        for(int j=0; j<zozio.tope; j++){
+                if(zozio.s[j]->getCi()==Ci && !existeSocio){
+                    existeSocio=true;
+                    index = j;
+                    zozio = zozio.s[j]->getTope();
+                }
+            }
+    if(existeJuego){
+
+        Socio** p = Socio.s[index]->getSocios(cantSocios);
+        dts = new DtSocio[cantSocios];
+        for(int i=0;i<cantSocio;i++){
+            dts[i] = p[i]->getDtSocio();
+        }
+    }else{
+        throw invalid_argument("No existe el jSocio");
+    }
+    return dtp;
+}
+
+
+void agregarSocio(string nombre, string ci){
+    int i = 0;
+    while(i<zozio.tope && <zozio>.j[i]->getNombre()!=nickname)
+        i++;
+    if(i==zozio.tope && i != MAX_SOCIOS){
+        Socio socio = new socio(nombre,ci);
+        zozio.j[zozio.tope]=socio;
+        zozio.tope++;
+        cout << "socio " << nickname << " ingresado succesfully \n";
+    } else {
+        throw invalid_argument("error 404");
+    }
+}
